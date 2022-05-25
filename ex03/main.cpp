@@ -6,11 +6,11 @@
 /*   By: mmateo-t <mmateo-t@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:42:48 by mmateo-t          #+#    #+#             */
-/*   Updated: 2022/05/25 13:26:00 by mmateo-t         ###   ########.fr       */
+/*   Updated: 2022/05/25 19:08:32 by mmateo-t         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main(int argc, char const *argv[])
 {
@@ -63,6 +63,35 @@ int main(int argc, char const *argv[])
 		f2.highFivesGuys();
 		f3.highFivesGuys();
 		f4.highFivesGuys();
+		std::cout << std::endl;
+	}
+
+	std::cout << "\nDiamondTrap\n--------\n";
+	{
+		DiamondTrap d1("Camelot");
+		DiamondTrap d2;
+		DiamondTrap d3("Merlin");
+		DiamondTrap d4 = d1;
+		std::cout << std::endl;
+		d1.takeDamage(40);
+		d2.takeDamage(40);
+		d3.takeDamage(40);
+		d4.takeDamage(40);
+		std::cout << std::endl;
+		d1.beRepaired(60);
+		d2.beRepaired(60);
+		d3.beRepaired(60);
+		d4.beRepaired(60);
+		std::cout << std::endl;
+		d1.attack("Skag");
+		d2.attack("Rakk");
+		d3.attack("Psycho");
+		d4.attack("ClapTrap");
+		std::cout << std::endl;
+		d1.whoAmI();
+		d2.whoAmI();
+		d3.whoAmI();
+		d4.whoAmI();
 		std::cout << std::endl;
 	}
 	return 0;

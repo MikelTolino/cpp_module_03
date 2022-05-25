@@ -6,7 +6,7 @@
 /*   By: mmateo-t <mmateo-t@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 13:42:14 by mmateo-t          #+#    #+#             */
-/*   Updated: 2022/05/25 13:44:55 by mmateo-t         ###   ########.fr       */
+/*   Updated: 2022/05/25 19:06:23 by mmateo-t         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class DiamondTrap : public FragTrap, public ScavTrap
 		DiamondTrap &operator=(DiamondTrap const &);
 		~DiamondTrap( void );
 		void whoAmI( void );
+		void attack(std::string const &target);
 };
 
 #endif
