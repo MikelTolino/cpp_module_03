@@ -6,7 +6,7 @@
 /*   By: mmateo-t <mmateo-t@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:15:30 by mmateo-t          #+#    #+#             */
-/*   Updated: 2022/05/03 18:29:52 by mmateo-t         ###   ########.fr       */
+/*   Updated: 2022/05/25 11:56:55 by mmateo-t         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,18 @@
 
 class ClapTrap
 {
-private:
-	std::string name;
-	int hit_pts;
-	int energy_pts;
-	int attack_damage;
+protected:
+	std::string _name;
+	int _hitPts;
+	int _energyPts;
+	int _attackDamage;
 
 public:
-	ClapTrap(std::string = "CL4P-TP");
-	~ClapTrap();
+	ClapTrap(std::string);
+	ClapTrap(void);
+	ClapTrap(ClapTrap const &);
+	ClapTrap &operator=(ClapTrap const &);
+	~ClapTrap(void);
 	void attack(std::string const &target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
