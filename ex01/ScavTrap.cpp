@@ -6,7 +6,7 @@
 /*   By: mmateo-t <mmateo-t@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:47:48 by mmateo-t          #+#    #+#             */
-/*   Updated: 2022/05/25 12:15:24 by mmateo-t         ###   ########.fr       */
+/*   Updated: 2022/05/25 12:19:01 by mmateo-t         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ ScavTrap & ScavTrap::operator= (ScavTrap const & other)
 
 ScavTrap::~ScavTrap()
 {
-	std::cout << " I'M DEAD I'M DEAD OHMYGOD I'M DEAD!\n";
+	std::cout << " I'M DEAD AMIGOO I'M DEAD OHMYGOD I'M DEAD!\n";
 }
 
 void ScavTrap::guardGate( void )

@@ -6,7 +6,7 @@
 /*   By: mmateo-t <mmateo-t@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:47:46 by mmateo-t          #+#    #+#             */
-/*   Updated: 2022/05/25 11:55:43 by mmateo-t         ###   ########.fr       */
+/*   Updated: 2022/05/25 12:16:36 by mmateo-t         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,14 @@
 
 class ScavTrap : public ClapTrap
 {
-private:
-	/* data */
-public:
-	ScavTrap( void );
-	ScavTrap(std::string const);
-	ScavTrap(ScavTrap const &);
-	ScavTrap & operator= (ScavTrap const &);
-	~ScavTrap();
-	void guardGate();
+
+	public:
+		ScavTrap(void);
+		ScavTrap(std::string const);
+		ScavTrap(ScavTrap const &);
+		ScavTrap &operator=(ScavTrap const &);
+		~ScavTrap();
+		void guardGate();
 };
 
 #endif

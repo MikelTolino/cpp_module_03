@@ -6,7 +6,7 @@
 /*   By: mmateo-t <mmateo-t@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:42:48 by mmateo-t          #+#    #+#             */
-/*   Updated: 2022/05/25 12:14:23 by mmateo-t         ###   ########.fr       */
+/*   Updated: 2022/05/25 12:21:07 by mmateo-t         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int main(int argc, char const *argv[])
 {
+	std::cout << "\nClapTrap\n--------\n";
 	{
 		ClapTrap c1("Juanito");
 		ClapTrap c2;
 		ClapTrap c3("Marianito");
 		ClapTrap c4 = c1;
 
-		std::cout << std::endl;
 		c1.takeDamage(50);
 		c2.takeDamage(50);
 		c3.takeDamage(50);
@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
 		c4.attack("Psycho");
 		std::cout << std::endl;
 	}
-
+	std::cout << "\nScavTrap\n--------\n";
 	{
 		ScavTrap s1("Lucia");
 		ScavTrap s2;
@@ -45,20 +45,20 @@ int main(int argc, char const *argv[])
 		ScavTrap s4 = s1;
 
 		std::cout << std::endl;
-		s1.takeDamage(50);
-		s2.takeDamage(50);
-		s3.takeDamage(50);
-		s4.takeDamage(50);
+		s1.takeDamage(10);
+		s2.takeDamage(10);
+		s3.takeDamage(10);
+		s4.takeDamage(10);
 		std::cout << std::endl;
-		s1.beRepaired(20);
-		s2.beRepaired(20);
-		s3.beRepaired(20);
-		s4.beRepaired(20);
+		s1.beRepaired(40);
+		s2.beRepaired(40);
+		s3.beRepaired(40);
+		s4.beRepaired(40);
 		std::cout << std::endl;
 		s1.attack("Skag");
 		s2.attack("Rakk");
 		s3.attack("Psycho");
-		s4.attack("Psycho");
+		s4.attack("ClapTrap");
 		std::cout << std::endl;
 		s1.guardGate();
 		s2.guardGate();
