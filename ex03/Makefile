@@ -6,12 +6,13 @@
 #    By: mmateo-t <mmateo-t@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/03 17:48:32 by mmateo-t          #+#    #+#              #
-#    Updated: 2022/05/25 14:14:14 by mmateo-t         ###   ########.fr        #
+#    Updated: 2022/05/27 12:48:29 by mmateo-t         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX:= clang++
 CFLAGS:= -Wall -Werror -Wextra
+SHADOW:= -Wshadow
 CPPSTD:= -std=c++98
 SRCS:= $(wildcard *.cpp)
 OBJS:= $(SRCS:%.cpp=%.o)
@@ -21,7 +22,7 @@ RM:= rm -rf
 all:$(NAME)
 
 $(NAME):$(OBJS)
-	$(CXX) $(CFLAGS) $(CPPSTD) $(OBJS) -o $@
+	$(CXX) $(CFLAGS) $(SHADOW) $(CPPSTD) $(OBJS) -o $@
 
 %.o: %.c
 	$(CXX) $(CFLAGS) $(CPPSTD) -c $(SRCS) -o $@
